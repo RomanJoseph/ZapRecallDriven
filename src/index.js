@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom";
-import InitialPage from "./initialPage/initialPage";
+import App from "./App";
 
-function App(){
-    return <InitialPage/>
+function Index(){
+    return (<App></App>)
 }
 
-ReactDOM.render(App(),document.querySelector(".root"))
+ReactDOM.render(Index(),document.querySelector(".root"))

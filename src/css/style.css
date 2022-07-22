@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 375px;
+    background-color: #FB6B6B;
+    font-family: 'Recursive', sans-serif;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+}
+
+.logo{
+    width: 140px;
+    height: 160px;
+}
+
+.initialPage{
+    height: 667px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.initialPage h1{
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.initGame {
+    width: 250px;
+    height: 55px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D70900;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.initGame p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #D70900;
+}
+
+.header{
+    margin-top: 48px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img{
+    width: 52px;
+    height: 60px;
+}
+
+.header h1{
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.questionCard {
+    width: 300px;
+    height: 65px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px 0px #00000026;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+}
+
+.questionCard ion-icon{
+    font-size: 30px;
+}
+
+.questionNumber {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.questionTurned {
+    width: 300px;
+    height: 131px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionTurned span{
+    margin-top: 18px;
+    margin-left: 15px;
+}
+
+.questionTurned ion-icon{
+    margin-bottom: 18px;
+    margin-right: 15px;
+    align-self: flex-end;
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.answers {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.answeredGreen{
+    text-decoration: line-through;
+    color:#2FBE34;
+}
+
+.answeredOrange{
+    text-decoration: line-through;
+    color:#FF922E;
+}
+
+.answeredRed{
+    text-decoration: line-through;
+    color: #FF3030;
+}
+
+.red{
+    background-color: red;
+    width: 85px;
+    height: 37px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+ion-icon[name="checkmark-circle"]{
+    color:#2FBE34;
+}
+
+ion-icon[name="help-circle"]{
+    color:#FF922E;
+}
+
+ion-icon[name="close-circle"]{
+    color: #FF3030;
+}
+
+.orange{
+    background-color: orange;
+    width: 85px;
+    height: 37px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.green{
+    background-color: green;
+    width: 85px;
+    height: 37px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+footer{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer span{
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+footer span ion-icon{
+    font-size: 23px;
+}
