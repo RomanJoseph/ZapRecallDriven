@@ -5,7 +5,7 @@ import "./css/reset.css"
 import "./css/style.css"
 
 export default function App(){
-    const [init,setInit] = useState(false)
+    const [init,setInit] = useState(true)
 
     if(init){
         return <InitialPage setInit={setInit}/>
