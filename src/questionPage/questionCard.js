@@ -1,10 +1,9 @@
 import react from "react"
 
-export default function QuestionCard({ number, question, answer, setAnsweredQuestions, answeredQuestions, icons, setIcons }) {
+export default function QuestionCard({ number, question, answer, setAnsweredQuestions, answeredQuestions, icons, setIcons, final, setFinal }) {
     const [card, setCard] = react.useState(false)
     const [selectAnswer, setSelectAnswer] = react.useState(false)
     const [isAnswerd, setIsAnswerd] = react.useState(false)
-
 
     if (card) {
         if (selectAnswer) {
@@ -38,17 +37,20 @@ export default function QuestionCard({ number, question, answer, setAnsweredQues
                                 <div className="red" onClick={() => {
                                     setIsAnswerd("red")
                                     setAnsweredQuestions(answeredQuestions+1)
-                                    setIcons([...icons, <ion-icon name="close-circle"></ion-icon>])}
+                                    setIcons([...icons, <ion-icon name="close-circle"></ion-icon>])
+                                    setFinal([...final, "red"])}
                                     }>Não Lembrei</div>
                                 <div className="orange" onClick={() => {
                                     setIsAnswerd("orange")
                                     setAnsweredQuestions(answeredQuestions+1)
-                                    setIcons([...icons, <ion-icon name="help-circle"></ion-icon>])}
+                                    setIcons([...icons, <ion-icon name="help-circle"></ion-icon>])
+                                    setFinal([...final, "orange"])}
                                     }>Quase não lembrei</div>
                                 <div className="green" onClick={() => {
                                     setIsAnswerd("green")
                                     setAnsweredQuestions(answeredQuestions+1)
-                                    setIcons([...icons, <ion-icon name="checkmark-circle"></ion-icon>])}
+                                    setIcons([...icons, <ion-icon name="checkmark-circle"></ion-icon>])
+                                    setFinal([...final,"green"])}
                                     }>Zap!</div>
                             </div>
                         </div>)

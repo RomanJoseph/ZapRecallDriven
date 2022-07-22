@@ -7,6 +7,7 @@ export default function QuestionPage() {
     const questions = buildQuestionsArray()
     const [answeredQuestions, setAnsweredQuestions] = react.useState(0)
     const [icons, setIcons] = react.useState([])
+    const [final, setFinal] = react.useState([])
 
     return (
         <>
@@ -16,10 +17,10 @@ export default function QuestionPage() {
             </div>
 
             {questions.map((question, index) => {
-                return <QuestionCard key={index} number={index + 1} question={question.Question} answer={question.Answer} answeredQuestions = {answeredQuestions} setAnsweredQuestions={setAnsweredQuestions} icons={icons} setIcons={setIcons}/>
+                return <QuestionCard key={index} number={index + 1} question={question.Question} answer={question.Answer} answeredQuestions = {answeredQuestions} setAnsweredQuestions={setAnsweredQuestions} icons={icons} setIcons={setIcons} final = {final} setFinal={setFinal}/>
             })}
 
-            <Bottom answeredQuestions={answeredQuestions} icons={icons}/>
+            <Bottom answeredQuestions={answeredQuestions} icons={icons} final={final}/>
         </>
     )
 }

@@ -1,16 +1,16 @@
 import congratulations from "./party.png"
 import sad from "./sad.png"
 
-export default function Bottom({ answeredQuestions, icons}) {
+export default function Bottom({ answeredQuestions, icons, final}) {
     if (icons.length != 4) {
         return (
             <footer>
-                <p>{answeredQuestions}/4 Concluídos</p>
+                <span>{answeredQuestions}/4 Concluídos</span>
                 <span>{icons}</span>
             </footer>
         )
     } else {
-        if ((icons.includes(<ion-icon name="close-circle"></ion-icon>))) {
+        if (!(final.includes("red"))) {
             return (
                 <footer>
                     <span><strong>Parabéns!</strong><img src={congratulations} /></span>
